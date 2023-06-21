@@ -162,49 +162,49 @@ barba.init({
 
         data.next.container.classList.remove('is-animating');
 
-        $('.archives-slider-component').each(function (index) {
-          const bgSwiper = new Swiper($(this).find('.swiper.is-bg-image')[0], {
-            on: {
-              init: function () {
-                console.log('swiper initialized');
-              },
-            },
+        // $('.archives-slider-component').each(function (index) {
+        //   const bgSwiper = new Swiper($(this).find('.swiper.is-bg-image')[0], {
+        //     on: {
+        //       init: function () {
+        //         console.log('swiper initialized');
+        //       },
+        //     },
 
-            slidesperView: 1,
-            speed: 300,
-            allowTouchMove: false,
-            loop: true,
-            loopedSlides: 30,
-            mousewheel: true,
-            effect: 'creative',
-            creativeEffect: {
-              prev: {
-                translate: [0, -400, -400],
-                scale: 0,
-                origin: 'top left',
-                perspective: true,
-                rotate: [0, -180, -10],
-              },
-              next: {
-                translate: [0, '100%', 0],
-                scale: 1,
-                perspective: true,
-                rotate: [0, 180, -20],
-              },
-            },
-          });
+        //     slidesperView: 1,
+        //     speed: 300,
+        //     allowTouchMove: false,
+        //     loop: true,
+        //     loopedSlides: 30,
+        //     mousewheel: true,
+        //     effect: 'creative',
+        //     creativeEffect: {
+        //       prev: {
+        //         translate: [0, -400, -400],
+        //         scale: 0,
+        //         origin: 'top left',
+        //         perspective: true,
+        //         rotate: [0, -180, -10],
+        //       },
+        //       next: {
+        //         translate: [0, '100%', 0],
+        //         scale: 1,
+        //         perspective: true,
+        //         rotate: [0, 180, -20],
+        //       },
+        //     },
+        //   });
 
-          const thumbSwiper = new Swiper($(this).find('.swiper.is-thumbs')[0], {
-            slidesperView: 1,
-            speed: 200,
-            loop: true,
-            loopedSlides: 30,
-            slideToClickSlide: true,
-          });
+        //   const thumbSwiper = new Swiper($(this).find('.swiper.is-thumbs')[0], {
+        //     slidesperView: 1,
+        //     speed: 200,
+        //     loop: true,
+        //     loopedSlides: 30,
+        //     slideToClickSlide: true,
+        //   });
 
-          console.log(thumbSwiper);
-          bgSwiper.controller.control = thumbSwiper;
-        });
+        //   console.log(thumbSwiper);
+        //   bgSwiper.controller.control = thumbSwiper;
+        // });
       },
     },
   ],
